@@ -1,0 +1,30 @@
+{
+  "name": "@raoun/utils",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raoun4136/raoun.git"
+  },
+  "author": "Raoun4136 <qkrtjddh1212@naver.com>",
+  "bugs": {
+    "url": "https://github.com/Raoun4136/raoun/issues"
+  },
+  "homepage": "https://github.com/Raoun4136/raoun#readme",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/typescript": "^2.0.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-ts": "^3.4.5"
+  },
+  "devDependencies": {
+    "rollup": "^4.6.1"
+  }
+}
