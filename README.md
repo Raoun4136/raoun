@@ -1,4 +1,4 @@
-# Raoun 라이브러리 &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Raoun4136/raoun/blob/main/LICENSE)
+# Raoun 라이브러리 &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Raoun4136/raoun/blob/main/LICENSE) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 Raoun 라이브러리는 블로그 및 패키지 배포 테스트입니다.
 

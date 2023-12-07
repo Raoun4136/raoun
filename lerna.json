@@ -5,6 +5,10 @@
   "command": {
     "publish": {
       "npmClient": "yarn"
+    },
+    "version": {
+      "npmClient": "yarn",
+      "conventionalCommits": true
     }
   }
 }
