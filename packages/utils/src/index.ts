@@ -1,7 +1,5 @@
-export const phoneFormmater = (phone?: string) => {
-  if (!phone) return '';
+export * from './console';
+export * from './random';
 
-  if (phone.length === 10)
-    return `${phone.slice(0, 3)}-${phone.slice(3, 6)}-${phone.slice(6, 10)}`;
-  else return `${phone.slice(0, 3)}-${phone.slice(3, 7)}-${phone.slice(7, 11)}`;
-};
+// folder
+export * from './formatter';

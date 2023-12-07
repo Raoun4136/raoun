@@ -1,0 +1,1 @@
+export { phoneFormmater } from './phone';

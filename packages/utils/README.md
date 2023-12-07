@@ -16,4 +16,4 @@ yarn add @raoun/utils
 
 ## Features
 
-- 현재 전화번호 formatting 가능
+- console, random, format 기능
