@@ -1,4 +1,4 @@
-export const phoneFormmater = (phone?: string) => {
+export const phoneFormater = (phone?: string) => {
   if (!phone) return '';
 
   if (phone.length === 10)

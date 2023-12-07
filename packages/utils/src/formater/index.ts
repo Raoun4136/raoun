@@ -1,0 +1,1 @@
+export { phoneFormater } from './phone';
