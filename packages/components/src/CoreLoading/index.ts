@@ -1,0 +1,1 @@
+export { CoreLoading } from './CoreLoading';
