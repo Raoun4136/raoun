@@ -1,5 +1,5 @@
 import React from 'react';
-import './CoreButton.css';
+import './button.css';
 
 interface ButtonProps {
   /**
@@ -27,7 +27,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const CoreButton = ({
+export const Button = ({
   primary = false,
   size = 'medium',
   backgroundColor,
