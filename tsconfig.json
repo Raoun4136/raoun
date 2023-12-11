@@ -7,9 +7,10 @@
     "noLib": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "preserveValueImports": false,
     "target": "es6",
     "sourceMap": true,
-    "lib": ["es6"]
+    "lib": ["es6", "DOM"]
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
