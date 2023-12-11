@@ -14,17 +14,20 @@ module.exports = {
         use: ['style-loader', 'css-loader'], // CSS 파일을 번들하기 위한 로더 설정
       },
       {
-        test: /\.(js|jsx|ts|tsx)$/, // JavaScript, TypeScript 파일을 위한 로더
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Babel을 통해 JS/TS 파일 번들링
+          loader: 'babel-loader',
           options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react',
-              '@babel/preset-typescript',
-            ],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
+        },
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
         },
       },
     ],
