@@ -10,43 +10,48 @@
         "name": "conventionalCommits",
         "types": [
           {
-            "type": "✨",
+            "type": "feat",
             "section": "✨ New Features",
             "hidden": false
           },
           {
-            "type": "🐛",
+            "type": "fix",
             "section": "🐛 Bug Fixes",
             "hidden": false
           },
           {
-            "type": "🎨",
+            "type": "style",
             "section": "🎨 Styles",
             "hidden": false
           },
           {
-            "type": "♻️",
-            "section": "♻️ Formating & Refactoring",
+            "type": "refactor",
+            "section": "♻️ Refactoring",
             "hidden": false
           },
           {
-            "type": "🚑",
-            "section": "🚑 Ambulance",
+            "type": "perf",
+            "section": "🎭 Performance",
             "hidden": false
           },
           {
-            "type": "🗃",
-            "section": "🗃 Model & Database",
+            "type": "docs",
+            "section": "📚 Docs",
             "hidden": false
           },
           {
-            "type": "👷",
+            "type": "chore",
             "section": "👷 Build & Config & Setting",
             "hidden": false
           },
           {
-            "type": "🔀",
-            "section": "🔀 Branch Merge",
+            "type": "ci",
+            "section": "⚪️ CI",
+            "hidden": false
+          },
+          {
+            "type": "test",
+            "section": "🧪 Test",
             "hidden": false
           }
         ]
@@ -59,43 +64,48 @@
         "name": "conventionalCommits",
         "types": [
           {
-            "type": "✨",
+            "type": "feat",
             "section": "✨ New Features",
             "hidden": false
           },
           {
-            "type": "🐛",
+            "type": "fix",
             "section": "🐛 Bug Fixes",
             "hidden": false
           },
           {
-            "type": "🎨",
+            "type": "style",
             "section": "🎨 Styles",
             "hidden": false
           },
           {
-            "type": "♻️",
-            "section": "♻️ Formating & Refactoring",
+            "type": "refactor",
+            "section": "♻️ Refactoring",
             "hidden": false
           },
           {
-            "type": "🚑",
-            "section": "🚑 Ambulance",
+            "type": "perf",
+            "section": "🎭 Performance",
             "hidden": false
           },
           {
-            "type": "🗃",
-            "section": "🗃 Model & Database",
+            "type": "docs",
+            "section": "📚 Docs",
             "hidden": false
           },
           {
-            "type": "👷",
+            "type": "chore",
             "section": "👷 Build & Config & Setting",
             "hidden": false
           },
           {
-            "type": "🔀",
-            "section": "🔀 Branch Merge",
+            "type": "ci",
+            "section": "⚪️ CI",
+            "hidden": false
+          },
+          {
+            "type": "test",
+            "section": "🧪 Test",
             "hidden": false
           }
         ]
