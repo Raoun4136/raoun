@@ -9,9 +9,10 @@
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "dist/main.js",
   "directories": {
     "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "publishConfig": {
