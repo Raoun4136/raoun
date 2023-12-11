@@ -16,4 +16,4 @@ yarn add @raoun/components
 
 ## Features
 
-- CoreLoading, CoreButton 가능
+- CoreLoading, CoreButton, CoreHeader 가능
