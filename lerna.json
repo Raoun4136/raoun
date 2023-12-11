@@ -5,7 +5,52 @@
   "command": {
     "publish": {
       "npmClient": "yarn",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventionalCommits",
+        "types": [
+          {
+            "type": "✨",
+            "section": "✨ New Features",
+            "hidden": false
+          },
+          {
+            "type": "🐛",
+            "section": "🐛 Bug Fixes",
+            "hidden": false
+          },
+          {
+            "type": "🎨",
+            "section": "🎨 Styles",
+            "hidden": false
+          },
+          {
+            "type": "♻️",
+            "section": "♻️ Formating & Refactoring",
+            "hidden": false
+          },
+          {
+            "type": "🚑",
+            "section": "🚑 Ambulance",
+            "hidden": false
+          },
+          {
+            "type": "🗃",
+            "section": "🗃 Model & Database",
+            "hidden": false
+          },
+          {
+            "type": "👷",
+            "section": "👷 Build & Config & Setting",
+            "hidden": false
+          },
+          {
+            "type": "🔀",
+            "section": "🔀 Branch Merge",
+            "hidden": false
+          }
+        ]
+      }
     },
     "version": {
       "npmClient": "yarn",
