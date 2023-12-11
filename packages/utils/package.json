@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com-raoun4136:Raoun4136/raoun.git"
+    "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
     "tsc": "tsc",
