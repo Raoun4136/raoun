@@ -9,26 +9,28 @@
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "publishConfig": {
     "access": "public"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com-raoun4136:Raoun4136/raoun.git"
   },
   "scripts": {
-    "clean": "rimraf lib/",
-    "copy-files": "copyfiles -u 1 src/**/*.css lib",
-    "tsc": "tsc && yarn copy-files",
-    "test": "tsc && jest"
+    "tsc": "tsc",
+    "test": "tsc && jest",
+    "build": "rollup -c"
   },
   "dependencies": {
     "@babel/cli": "^7.23.4",
@@ -38,8 +40,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "devDependencies": {
-    "copyfiles": "^2.4.1",
-    "rimraf": "^5.0.5"
-  }
+  "devDependencies": {}
 }
