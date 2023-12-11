@@ -7,7 +7,7 @@
       "npmClient": "yarn",
       "conventionalCommits": true,
       "changelogPreset": {
-        "name": "conventionalCommits",
+        "name": "conventional-changelog-conventionalcommits",
         "types": [
           {
             "type": "feat",
@@ -61,7 +61,7 @@
       "npmClient": "yarn",
       "conventionalCommits": true,
       "changelogPreset": {
-        "name": "conventionalCommits",
+        "name": "conventional-changelog-conventionalcommits",
         "types": [
           {
             "type": "feat",

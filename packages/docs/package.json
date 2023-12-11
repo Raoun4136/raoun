@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@raoun/components": "^0.0.13",
     "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-interactions": "^7.6.4",
     "@storybook/addon-links": "^7.6.4",
