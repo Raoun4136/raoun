@@ -12,7 +12,6 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
-    "lib": "lib",
     "dist": "dist",
     "test": "__tests__"
   },
@@ -20,7 +19,6 @@
     "access": "public"
   },
   "files": [
-    "lib",
     "dist"
   ],
   "repository": {
@@ -28,8 +26,7 @@
     "url": "git@github.com-raoun4136:Raoun4136/raoun.git"
   },
   "scripts": {
-    "tsc": "tsc",
-    "test": "tsc && jest",
+    "test": "jest",
     "build": "rollup -c"
   },
   "dependencies": {
