@@ -4,8 +4,7 @@
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "npmClient": "yarn",
-      "prepare": { "lifecycle": { "build": "yarn run webpack" } }
+      "npmClient": "yarn"
     },
     "version": {
       "npmClient": "yarn",
