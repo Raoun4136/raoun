@@ -12,10 +12,8 @@ function getAbsolutePath(value: string): any {
 const config: StorybookConfig = {
   stories: [
     '../README.mdx',
-    '../packages/components/src/**/*.@(mdx)',
-    '../packages/components/src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
-    '../packages/utils/src/**/*.@(mdx)',
-    '../packages/utils/src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../packages/**/*/src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
+    '../packages/**/*/src/**/*.@(mdx)',
   ],
   addons: [
     getAbsolutePath('@storybook/addon-links'),
