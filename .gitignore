@@ -13,3 +13,6 @@ esm
 lerna-debug.log
 npm-debug.log
 .idea
+
+# Ignore Panda css output files
+styled-system

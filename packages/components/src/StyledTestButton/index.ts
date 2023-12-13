@@ -1,0 +1,1 @@
+export { StyledTestButton } from './StyledTestButton';
