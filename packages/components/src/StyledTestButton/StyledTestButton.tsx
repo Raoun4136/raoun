@@ -18,7 +18,7 @@ export const StyledTestButton = ({ children, bg, ...props }: IButtonProps) => {
         px: '4',
         py: '8',
         borderRadius: 'md',
-        _hover: { bg: 'red.400', cursor: 'pointer' },
+        _hover: { bg: 'red.600', cursor: 'pointer' },
       })}
     >
       {children}
