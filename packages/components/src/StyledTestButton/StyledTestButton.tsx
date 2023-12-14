@@ -5,14 +5,15 @@ import '../../styled-system/styles.css';
 
 export interface IButtonProps {
   children: ReactNode;
+  bg: string;
   onClick?: () => void;
 }
 
-export const StyledTestButton = ({ children, ...props }: IButtonProps) => {
+export const StyledTestButton = ({ children, bg, ...props }: IButtonProps) => {
   return (
     <button
       className={css({
-        bg: 'red.500',
+        bg: bg,
         fontFamily: 'Inter',
         px: '4',
         py: '8',

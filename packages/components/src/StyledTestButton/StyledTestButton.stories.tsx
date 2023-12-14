@@ -21,6 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const RedButton: Story = {
   args: {
     children: 'Click me!',
+    bg: 'red.500',
   },
 };
 
@@ -40,5 +41,6 @@ export const NodeButton: Story = {
         Click me!
       </div>
     ),
+    bg: 'blue.500',
   },
 };
