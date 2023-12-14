@@ -43,8 +43,8 @@
     "vite": "^5.0.0"
   },
   "scripts": {
-    "prepare": "lerna run build",
-    "storybook": "lerna run build && storybook dev -p 6006",
+    "prepare": "lerna run prepare",
+    "storybook": "yarn prepare && storybook dev -p 6006",
     "build-storybook": "yarn prepare && storybook build"
   }
 }

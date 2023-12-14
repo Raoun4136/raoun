@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactNode } from 'react';
 import { css } from '../../styled-system/css/css';
-import '../../styled-system/styles.css';
+import '../index.css';
 
 export interface IButtonProps {
   children: ReactNode;

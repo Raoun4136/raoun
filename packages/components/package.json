@@ -27,9 +27,7 @@
   },
   "scripts": {
     "test": "jest",
-    "prepare": "panda codegen --clean",
-    "prepare:watch": "panda codegen --clean --watch",
-    "build": "panda codegen --clean && panda && rollup -c"
+    "prepare": "panda codegen --clean && panda && rollup -c"
   },
   "dependencies": {
     "@babel/cli": "^7.23.4",

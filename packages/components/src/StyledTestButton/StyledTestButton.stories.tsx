@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { css } from '../../styled-system/css/css';
+import '../index.css';
 
 import { StyledTestButton } from './StyledTestButton';
 

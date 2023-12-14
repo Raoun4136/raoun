@@ -29,6 +29,7 @@ export default [
         // css 번들링
         {
           plugins: [cssimport(), autoprefixer()],
+          extract: true,
         }
       ),
     ],
