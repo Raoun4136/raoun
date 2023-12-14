@@ -19,12 +19,12 @@ export default [
     plugins: [
       peerDepsExternal(),
       image(),
-      resolve({ extensions }),
+      resolve(),
       commonjs({
         include: /node_modules/,
       }),
       typescript({ clean: true, sourceMap: false }),
-      uglify(), // js 압축
+      // uglify(), // js 압축
       postcss(
         // css 번들링
         {
@@ -40,10 +40,17 @@ export default [
 
     plugins: [
       dts(),
+      peerDepsExternal(),
+      image(),
+      commonjs({
+        include: /node_modules/,
+      }),
+      // uglify(), // js 압축
       postcss(
         // css 번들링
         {
           plugins: [cssimport(), autoprefixer()],
+          extract: true,
         }
       ),
     ],
