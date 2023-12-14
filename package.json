@@ -43,7 +43,8 @@
     "vite": "^5.0.0"
   },
   "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "lerna run prepare && storybook build"
+    "prepare": "lerna run prepare",
+    "storybook": "(lerna run build && storybook dev -p 6006) || cd packages/components panda --watch",
+    "build-storybook": "yarn prepare && storybook build"
   }
 }

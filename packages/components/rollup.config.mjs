@@ -6,6 +6,8 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import image from '@rollup/plugin-image';
 import dts from 'rollup-plugin-dts';
+import cssimport from 'postcss-import';
+import autoprefixer from 'autoprefixer';
 
 const extensions = ['.js', '.ts'];
 
@@ -23,13 +25,26 @@ export default [
       }),
       typescript({ clean: true, sourceMap: false }),
       uglify(), // js 압축
-      postcss(),
+      postcss(
+        // css 번들링
+        {
+          plugins: [cssimport(), autoprefixer()],
+        }
+      ),
     ],
   }, // 타입 정의 파일 번들링
   {
     input: 'src/index.ts',
     output: [{ file: 'dist/index.d.ts', format: 'cjs' }],
 
-    plugins: [dts(), postcss()],
+    plugins: [
+      dts(),
+      postcss(
+        // css 번들링
+        {
+          plugins: [cssimport(), autoprefixer()],
+        }
+      ),
+    ],
   },
 ];
