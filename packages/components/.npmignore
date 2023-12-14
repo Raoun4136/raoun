@@ -1,6 +1,5 @@
 node_modules/
 lib/
-styled-system/
 .eslintrc.js
 .prettierrc
 rollup.config.js
