@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "jest",
-    "prepare": "panda codegen --clean && panda && rollup -c"
+    "build": "rollup -c"
   },
   "dependencies": {
     "@babel/cli": "^7.23.4",
@@ -38,7 +38,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.21.0",
     "autoprefixer": "^10.4.16",
     "postcss-import": "^15.1.0"
   }

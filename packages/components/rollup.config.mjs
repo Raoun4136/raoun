@@ -9,8 +9,6 @@ import dts from 'rollup-plugin-dts';
 import cssimport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
 
-const extensions = ['.js', '.ts'];
-
 export default [
   {
     // js 번들링
@@ -24,7 +22,7 @@ export default [
         include: /node_modules/,
       }),
       typescript({ clean: true, sourceMap: false }),
-      // uglify(), // js 압축
+      uglify(), // js 압축
       postcss(
         // css 번들링
         {
@@ -38,21 +36,6 @@ export default [
     input: 'src/index.ts',
     output: [{ file: 'dist/index.d.ts', format: 'cjs' }],
 
-    plugins: [
-      dts(),
-      peerDepsExternal(),
-      image(),
-      commonjs({
-        include: /node_modules/,
-      }),
-      // uglify(), // js 압축
-      postcss(
-        // css 번들링
-        {
-          plugins: [cssimport(), autoprefixer()],
-          extract: true,
-        }
-      ),
-    ],
+    plugins: [dts()],
   },
 ];
