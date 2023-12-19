@@ -13,7 +13,14 @@ export default [
   {
     // js 번들링
     input: 'src/index.ts',
-    output: [{ file: 'dist/index.js', format: 'esm' }],
+    output: [
+      { file: 'dist/index.js', format: 'cjs' },
+      {
+        file: 'dist/index.esm.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+    ],
     plugins: [
       peerDepsExternal(),
       image(),
@@ -36,6 +43,12 @@ export default [
     input: 'src/index.ts',
     output: [{ file: 'dist/index.d.ts', format: 'cjs' }],
 
-    plugins: [dts()],
+    plugins: [
+      dts(),
+      postcss({
+        plugins: [cssimport(), autoprefixer()],
+        extract: true,
+      }),
+    ],
   },
 ];
