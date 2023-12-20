@@ -43,6 +43,7 @@
     "vite": "^5.0.0"
   },
   "scripts": {
+    "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   }
