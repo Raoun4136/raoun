@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.0...@raoun/utils@0.1.1) (2023-12-21)
+
+
+### 👷 Build & Config & Setting
+
+* **script:** commonJS로 변경 및 build 스크립트 변경 ([5bd780f](https://github.com/Raoun4136/raoun/commit/5bd780f0bb404b9cd3ed5ba9233b76669330f3d6))
+
+
+
 ## [0.1.0](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.0.8...@raoun/utils@0.1.0) (2023-12-21)
 
 
