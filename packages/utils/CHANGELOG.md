@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.0](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.0.8...@raoun/utils@0.1.0) (2023-12-21)
+
+
+### ✨ New Features
+
+* **script:** prepublish script 추가 ([9b635a3](https://github.com/Raoun4136/raoun/commit/9b635a3306465c05eb3c7ec13b782acdf0b88ed9))
+
+
+
 ## [0.0.8](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.0.7...@raoun/utils@0.0.8) (2023-12-13)
 
 **Note:** Version bump only for package @raoun/utils
