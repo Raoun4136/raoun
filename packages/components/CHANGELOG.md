@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.0...@raoun/components@0.1.1) (2023-12-21)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** rollup exports 세팅 ([ed23047](https://github.com/Raoun4136/raoun/commit/ed23047cf933997b09f68cb393117464fb2026e9))
+
+
+
 ## [0.1.0](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.0.22...@raoun/components@0.1.0) (2023-12-21)
 
 
