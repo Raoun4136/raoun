@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/Raoun4136/raoun/compare/@raoun/cjs_utils@0.2.1...@raoun/cjs_utils@0.2.2) (2023-12-21)
+
+
+### 👷 Build & Config & Setting
+
+* babel 삭제 및 test ts로 변경 ([c426f46](https://github.com/Raoun4136/raoun/commit/c426f46bf408dba1556af3aacea7ef111c2d0259))
+
+
+
 ## [0.2.1](https://github.com/Raoun4136/raoun/compare/@raoun/cjs_utils@0.2.0...@raoun/cjs_utils@0.2.1) (2023-12-21)
 
 
