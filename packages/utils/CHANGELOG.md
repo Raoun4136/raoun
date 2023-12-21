@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.1...@raoun/utils@0.1.2) (2023-12-21)
+
+
+### 👷 Build & Config & Setting
+
+* **utils:** cjs로 변경 테스트 ([4988a34](https://github.com/Raoun4136/raoun/commit/4988a343291691d6e55766cf6c6ba4890a769aa7))
+
+
+
 ## [0.1.1](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.0...@raoun/utils@0.1.1) (2023-12-21)
 
 
