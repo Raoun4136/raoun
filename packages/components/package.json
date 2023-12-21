@@ -27,6 +27,7 @@
     "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
+    "prepublish": "rollup -c",
     "test": "jest",
     "build": "rollup -c"
   },
