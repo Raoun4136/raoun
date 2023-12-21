@@ -21,6 +21,12 @@ export default [
         sourcemap: true,
       },
     ],
+    exports: {
+      '.': {
+        import: './dist/index.esm.js',
+        require: './dist/index.js',
+      },
+    },
     plugins: [
       peerDepsExternal(),
       image(),
