@@ -1,7 +1,10 @@
 'use strict';
 
-const cjsUtils = require('..');
+const utils = require('..');
 const assert = require('assert').strict;
 
-assert.strictEqual(cjsUtils(), 'Hello from cjsUtils');
-console.info('cjsUtils tests passed');
+describe('@raoun/cjsUtils', () => {
+  it('유틸이 Hello from cjsUtils를 반환할 것이다.', () => {
+    assert.strictEqual(utils.cjsUtils(), 'Hello from cjsUtils');
+  });
+});
