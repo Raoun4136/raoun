@@ -29,7 +29,7 @@
   "scripts": {
     "prepublish": "rollup -c",
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rollup"
   },
   "dependencies": {
     "@types/react": "^18.2.42",
