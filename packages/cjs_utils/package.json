@@ -26,7 +26,7 @@
   },
   "scripts": {
     "prepublish": "tsc",
-    "tsc": "tsc",
+    "build": "tsc",
     "test": "jest"
   }
 }
