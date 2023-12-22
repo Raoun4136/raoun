@@ -1,6 +1,6 @@
 {
   "name": "@raoun/package-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "create package for @raoun",
   "keywords": [
     "cli",
