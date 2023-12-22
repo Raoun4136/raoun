@@ -1,11 +1,15 @@
 {
-  "name": "@raoun/cjs_utils",
-  "version": "0.2.2",
-  "description": "utils for cjs test",
+  "name": "@raoun/package-cli",
+  "version": "0.0.0",
+  "description": "create package for @raoun",
   "keywords": [
-    "cjs",
-    "utils"
+    "cli",
+    "package",
+    "npm"
   ],
+  "bin": {
+    "raoun": "./bin/raoun"
+  },
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
@@ -25,8 +29,11 @@
     "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
-    "prepublish": "tsc",
-    "build": "tsc",
     "test": "jest"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "chalk": "4.1.2",
+    "commander": "^11.1.0"
   }
 }

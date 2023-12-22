@@ -1,11 +1,11 @@
-# `cjs_utils`
+# `package-cli`
 
 > TODO: description
 
 ## Usage
 
 ```
-const cjsUtils = require('cjs_utils');
+const packageCli = require('package-cli');
 
 // TODO: DEMONSTRATE API
 ```
