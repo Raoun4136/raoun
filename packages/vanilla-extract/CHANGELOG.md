@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.13](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.12...@raoun/vanilla-extract@0.0.13) (2023-12-28)
+
+
+### 🐛 Bug Fixes
+
+* **vanilla-extract:** properties 오브젝트 분해 ([4d3bb78](https://github.com/Raoun4136/raoun/commit/4d3bb781ba4b21510648f7b8ac637a3748c3e1c9))
+
+
+
 ## [0.0.12](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.11...@raoun/vanilla-extract@0.0.12) (2023-12-28)
 
 
