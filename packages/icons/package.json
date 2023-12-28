@@ -29,7 +29,7 @@
     "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
-    "generate:icons": "node script/generateIcons.cjs",
+    "generate:icons": "rm -rf lib && node script/generateIcons.cjs",
     "prepublish": "yarn build",
     "test": "jest",
     "build": "yarn generate:icons && rm -rf dist && rollup -c"

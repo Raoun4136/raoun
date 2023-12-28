@@ -64,7 +64,7 @@ const svgrConfig = {
 };
 
 const baseDir = path.join(__dirname, '..');
-const iconComponentsDir = path.join(baseDir, 'lib/icons');
+const iconComponentsDir = path.join(baseDir, 'lib');
 
 (async () => {
   // Clean old files
@@ -137,7 +137,7 @@ const iconComponentsDir = path.join(baseDir, 'lib/icons');
 
   const iconExports = iconComponentNames
     .map((componentFile) => path.basename(componentFile, '.tsx'))
-    .map((component) => `export * as ${component} from './${component}'`)
+    .map((component) => `export * from './${component}'`)
     .join('\n')
     .concat('\n');
   const iconsIndexPath = path.join(iconComponentsDir, 'index.ts');

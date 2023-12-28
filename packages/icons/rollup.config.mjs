@@ -9,19 +9,17 @@ import dts from 'rollup-plugin-dts';
 export default [
   {
     // js 번들링
-    input: 'lib/icons/index.ts',
+    input: 'lib/index.ts',
     output: [
       {
         dir: 'dist',
         format: 'cjs',
-        preserveModules: true,
         sourcemap: true,
       },
       {
         dir: 'dist',
         format: 'esm',
         sourcemap: true,
-        preserveModules: true,
       },
     ],
     plugins: [
@@ -36,7 +34,7 @@ export default [
     ],
   }, // 타입 정의 파일 번들링
   {
-    input: 'lib/icons/index.ts',
+    input: 'lib/index.ts',
     output: [
       { file: 'dist/index.d.ts', format: 'cjs' },
       { file: 'dist/index.esm.d.ts', format: 'esm' },
