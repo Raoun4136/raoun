@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.9...@raoun/vanilla-extract@0.0.10) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** globalcss 생성 삭제 ([133b077](https://github.com/Raoun4136/raoun/commit/133b07714cadd15d6cc01f5fe205fb5f226f4d2b))
+
+
+
 ## [0.0.9](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.8...@raoun/vanilla-extract@0.0.9) (2023-12-28)
 
 
