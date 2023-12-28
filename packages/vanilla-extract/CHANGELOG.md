@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.7...@raoun/vanilla-extract@0.0.8) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** 타입정의파일 cjs,esm 분리 ([e61da7d](https://github.com/Raoun4136/raoun/commit/e61da7d19a17e1df0401561e84426c4291ed2280))
+
+
+
 ## [0.0.7](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.6...@raoun/vanilla-extract@0.0.7) (2023-12-28)
 
 
