@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.3...@raoun/components@0.1.4) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* vanila -> vanilla 이름 변경 ([c0f0e31](https://github.com/Raoun4136/raoun/commit/c0f0e3105e59a8b74081a282ae263ca453a394f4))
+
+
+
 ## [0.1.3](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.2...@raoun/components@0.1.3) (2023-12-21)
 
 
