@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.5...@raoun/vanilla-extract@0.0.6) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** esm 모듈 다시 내보내기 ([4a1cc25](https://github.com/Raoun4136/raoun/commit/4a1cc25a0d18c7affb199d39f96e6baf1ceadfc9))
+
+
+
 ## [0.0.5](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.4...@raoun/vanilla-extract@0.0.5) (2023-12-28)
 
 

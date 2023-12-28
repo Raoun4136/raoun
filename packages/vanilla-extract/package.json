@@ -1,6 +1,6 @@
 {
   "name": "@raoun/vanilla-extract",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "description": "design-token for raoun",
   "keywords": [
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
   "main": "dist/index.js",
-  "module" : "dist/index.esm.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "directories": {
     "dist": "dist",
