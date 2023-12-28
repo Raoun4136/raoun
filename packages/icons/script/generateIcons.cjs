@@ -64,7 +64,7 @@ const svgrConfig = {
 };
 
 const baseDir = path.join(__dirname, '..');
-const iconComponentsDir = path.join(baseDir, 'src/icons');
+const iconComponentsDir = path.join(baseDir, 'lib/icons');
 
 (async () => {
   // Clean old files
