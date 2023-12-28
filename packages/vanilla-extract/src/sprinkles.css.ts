@@ -35,7 +35,7 @@ export const test_properties = {
   marginRight: { ...space, auto: 'auto' },
   gap: { ...space, none: 'none' },
   margin: space,
-};
+} as const;
 
 export const test_shorthands = {
   rounded: ['borderRadius'],
