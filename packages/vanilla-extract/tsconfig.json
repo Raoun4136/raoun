@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "esModuleInterop": true
-  },
+  "compilerOptions": {},
   "include": ["./src"],
   "exclude": ["node_modules", "dist"]
 }

@@ -26,13 +26,13 @@ export const definePrimaryProperty = ({ object }: { object: Color }) => {
     ...transformObject<SemanticColor>(vars.semantic.color),
     ...transformObject<Colors>(vars.global.colors),
   };
-  return defineProperties({
+  return {
     properties: {
       color: colors,
       backgroundColor: colors,
       borderColor: colors,
     },
-  });
+  };
 };
 
 export const baseBorderProperties = defineProperties({
