@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.4...@raoun/components@0.1.5) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** jest config 변경 ([776e86a](https://github.com/Raoun4136/raoun/commit/776e86a761147264da1fbe59c167bf3fd6e87ebd))
+
+
+
 ## [0.1.4](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.3...@raoun/components@0.1.4) (2023-12-28)
 
 
