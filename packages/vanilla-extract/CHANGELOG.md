@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.8...@raoun/vanilla-extract@0.0.9) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** peerdependency 추가 ([7dde81e](https://github.com/Raoun4136/raoun/commit/7dde81e7a03ae2038ac97e7dd8f21278311d0eb3))
+
+
+
 ## [0.0.8](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.7...@raoun/vanilla-extract@0.0.8) (2023-12-28)
 
 
