@@ -11,7 +11,7 @@ export const colors = {
 };
 export const space = transformObject<Space>({ spacing: vars.global.spacing });
 
-export const test_colorProperties = {
+export const test_properties = {
   properties: {
     color: colors,
     backgroundColor: colors,
@@ -37,16 +37,17 @@ export const test_colorProperties = {
     gap: { ...space, none: 'none' },
     margin: space,
   },
-  shorthands: {
-    rounded: ['borderRadius'],
-    padding: ['paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'],
-    paddingX: ['paddingLeft', 'paddingRight'],
-    paddingY: ['paddingTop', 'paddingBottom'],
-    margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
-    marginX: ['marginLeft', 'marginRight'],
-    marginY: ['marginTop', 'marginBottom'],
-  },
 };
+
+export const test_shorthands = {
+  rounded: ['borderRadius'],
+  padding: ['paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'],
+  paddingX: ['paddingLeft', 'paddingRight'],
+  paddingY: ['paddingTop', 'paddingBottom'],
+  margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
+  marginX: ['marginLeft', 'marginRight'],
+  marginY: ['marginTop', 'marginBottom'],
+} as const;
 
 export const colorProperties = defineProperties({
   properties: {
