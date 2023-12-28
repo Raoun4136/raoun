@@ -35,7 +35,7 @@ export const test_properties = {
   marginRight: { ...space, auto: 'auto' },
   gap: { ...space, none: 'none' },
   margin: space,
-} as const;
+};
 
 export const test_shorthands = {
   rounded: ['borderRadius'],
@@ -45,7 +45,7 @@ export const test_shorthands = {
   margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
   marginX: ['marginLeft', 'marginRight'],
   marginY: ['marginTop', 'marginBottom'],
-} as const;
+};
 
 export const colorProperties = defineProperties({
   properties: {
