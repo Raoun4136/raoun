@@ -39,5 +39,10 @@
     "@vanilla-extract/recipes": "^0.5.1",
     "@vanilla-extract/sprinkles": "^1.6.1"
   },
+  "peerDependencies": {
+    "@vanilla-extract/css": "^1.14.0",
+    "@vanilla-extract/recipes": "^0.5.1",
+    "@vanilla-extract/sprinkles": "^1.6.1"
+  },
   "gitHead": "ca5be8bf3a16c89b11313c0f81054dd502236a46"
 }
