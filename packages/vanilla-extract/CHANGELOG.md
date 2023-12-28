@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.16](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.15...@raoun/vanilla-extract@0.0.16) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** base properties로 분해 ([4ab517c](https://github.com/Raoun4136/raoun/commit/4ab517ca21a3e0fec541ec5ff4a79c87e1421292))
+
+
+
 ## [0.0.15](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.14...@raoun/vanilla-extract@0.0.15) (2023-12-28)
 
 
