@@ -12,31 +12,29 @@ export const colors = {
 export const space = transformObject<Space>({ spacing: vars.global.spacing });
 
 export const test_properties = {
-  properties: {
-    color: colors,
-    backgroundColor: colors,
-    borderColor: colors,
-    borderRadius: {
-      none: '0px',
-      medium: '6px',
-      large: '8px',
-      extraLarge: '12px',
-      '2xLarge': '16px',
-      '3xLarge': '24px',
-      '4xLarge': '40px',
-      full: '9999px',
-    },
-    paddingTop: space,
-    paddingBottom: space,
-    paddingLeft: space,
-    paddingRight: space,
-    marginTop: space,
-    marginBottom: space,
-    marginLeft: { ...space, auto: 'auto' },
-    marginRight: { ...space, auto: 'auto' },
-    gap: { ...space, none: 'none' },
-    margin: space,
+  color: colors,
+  backgroundColor: colors,
+  borderColor: colors,
+  borderRadius: {
+    none: '0px',
+    medium: '6px',
+    large: '8px',
+    extraLarge: '12px',
+    '2xLarge': '16px',
+    '3xLarge': '24px',
+    '4xLarge': '40px',
+    full: '9999px',
   },
+  paddingTop: space,
+  paddingBottom: space,
+  paddingLeft: space,
+  paddingRight: space,
+  marginTop: space,
+  marginBottom: space,
+  marginLeft: { ...space, auto: 'auto' },
+  marginRight: { ...space, auto: 'auto' },
+  gap: { ...space, none: 'none' },
+  margin: space,
 };
 
 export const test_shorthands = {
