@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.11](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.10...@raoun/vanilla-extract@0.0.11) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** preserveModule 추가 ([577c45e](https://github.com/Raoun4136/raoun/commit/577c45e9037d3a51368820b71147e60b2aac58b7))
+
+
+
 ## [0.0.10](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.9...@raoun/vanilla-extract@0.0.10) (2023-12-28)
 
 
