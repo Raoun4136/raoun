@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.14](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.13...@raoun/vanilla-extract@0.0.14) (2023-12-28)
+
+
+### 🐛 Bug Fixes
+
+* **vanilla-extract:** readonly 생성 ([3e635a6](https://github.com/Raoun4136/raoun/commit/3e635a69c4a61e2f10e10f7ec43ef18eef6592c0))
+
+
+
 ## [0.0.13](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.12...@raoun/vanilla-extract@0.0.13) (2023-12-28)
 
 
