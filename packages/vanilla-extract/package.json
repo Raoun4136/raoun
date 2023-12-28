@@ -1,5 +1,5 @@
 {
-  "name": "@raoun/vanila-extract-style",
+  "name": "@raoun/vanilla-extract",
   "version": "0.0.0",
   "description": "design-token for raoun",
   "keywords": [
@@ -7,22 +7,29 @@
     "design-token"
   ],
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
-  "homepage": "",
+  "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "lib/style.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com-raoun4136:Raoun4136/raoun.git"
   },
   "scripts": {
-    "test": "node ./__tests__/style.test.js"
+    "prepublish": "rm -rf dist && rollup -c",
+    "test": "jest",
+    "build": "rm -rf dist && rollup -c"
   },
   "devDependencies": {
     "@vanilla-extract/rollup-plugin": "^1.3.0"

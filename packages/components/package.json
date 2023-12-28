@@ -27,9 +27,9 @@
     "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
-    "prepublish": "rollup -c",
+    "prepublish": "rm -rf dist && rollup -c",
     "test": "jest",
-    "build": "rollup"
+    "build": "rm -rf dist && rollup -c"
   },
   "dependencies": {
     "@types/react": "^18.2.42",

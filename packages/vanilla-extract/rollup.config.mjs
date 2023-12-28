@@ -8,7 +8,7 @@ import image from '@rollup/plugin-image';
 import dts from 'rollup-plugin-dts';
 import cssimport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
-import { vanillaExtractPlugin } from '@vanilla-extract/rollup-plugin';
+// import { vanillaExtractPlugin } from '@vanilla-extract/rollup-plugin';
 
 export default [
   {
@@ -29,7 +29,7 @@ export default [
       },
     },
     plugins: [
-      vanillaExtractPlugin(),
+      // vanillaExtractPlugin(),
       peerDepsExternal(),
       image(),
       resolve(),
@@ -37,7 +37,7 @@ export default [
         include: /node_modules/,
       }),
       typescript({ clean: true, sourceMap: false }),
-      uglify(), // js 압축
+      // uglify(), // js 압축
       postcss(
         // css 번들링
         {
