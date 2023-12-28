@@ -1,7 +1,6 @@
 {
   "name": "@raoun/vanilla-extract",
   "version": "0.0.6",
-  "type": "module",
   "description": "design-token for raoun",
   "keywords": [
     "style",
