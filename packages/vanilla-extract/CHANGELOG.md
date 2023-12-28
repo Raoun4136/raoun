@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.3...@raoun/vanilla-extract@0.0.4) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** sourcemap 추출 ([5fe9db3](https://github.com/Raoun4136/raoun/commit/5fe9db349a56741a884420a295fa954f09e6e5ef))
+
+
+
 ## [0.0.3](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.2...@raoun/vanilla-extract@0.0.3) (2023-12-28)
 
 
