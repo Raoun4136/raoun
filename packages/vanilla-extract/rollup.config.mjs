@@ -33,10 +33,8 @@ export default [
       peerDepsExternal(),
       image(),
       resolve(),
-      commonjs({
-        include: /node_modules/,
-      }),
-      typescript({ clean: true, sourceMap: false }),
+      commonjs({}),
+      typescript({ clean: true, sourceMap: true }),
       // uglify(), // js 압축
       postcss(
         // css 번들링
@@ -49,8 +47,16 @@ export default [
   }, // 타입 정의 파일 번들링
   {
     input: 'src/index.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'cjs' }],
-
+    output: [
+      { file: 'dist/index.d.ts', format: 'cjs' },
+      { file: 'dist/index.esm.d.ts', format: 'esm' },
+    ],
+    exports: {
+      '.': {
+        import: './dist/index.d.ts',
+        require: './dist/index.esm.d.ts',
+      },
+    },
     plugins: [
       dts(),
       postcss({
