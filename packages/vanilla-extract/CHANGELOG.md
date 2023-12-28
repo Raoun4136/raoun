@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.11...@raoun/vanilla-extract@0.0.12) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** properites & shorthand 분리 ([7867715](https://github.com/Raoun4136/raoun/commit/786771570db9fa6a26653f5bcb2c6eebea557783))
+
+
+
 ## [0.0.11](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.10...@raoun/vanilla-extract@0.0.11) (2023-12-28)
 
 
