@@ -1,3 +1,7 @@
+import { vars } from './theme.css';
+import { type Color, Colors } from './tokens/global/colors';
+import { SemanticColor } from './tokens/semantic/colors';
+
 export const getVarName = (_value: string | null, path: string[]) => {
   return path.join('-').replace('.', '_').replace('/', '__');
 };
@@ -30,3 +34,19 @@ export type FlattenObjectKeys<
     ? FlattenObjectKeys<T[K], `${P}${K & (string | string)}-`>
     : `${P}${K & (string | number)}`;
 }[keyof T];
+
+export const definePrimaryProperty = ({ object }: { object: Color }) => {
+  // object 받은 후에 primary를 바꿔줘야함
+  // readonly type이라 고민중
+  const colors = {
+    ...transformObject<SemanticColor>(vars.semantic.color),
+    ...transformObject<Colors>(vars.global.colors),
+  };
+  return {
+    properties: {
+      color: colors,
+      backgroundColor: colors,
+      borderColor: colors,
+    },
+  };
+};
