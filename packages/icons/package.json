@@ -1,0 +1,47 @@
+{
+  "name": "@raoun/icons",
+  "version": "0.0.0",
+  "description": "icons tsx for raoun package",
+  "type": "module",
+  "keywords": [
+    "icon",
+    "tsx",
+    "raoun"
+  ],
+  "author": "SeongOh Park <qkrtjddh1212@naver.com>",
+  "homepage": "https://github.com/Raoun4136/raoun",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Raoun4136/raoun.git"
+  },
+  "scripts": {
+    "generate:icons": "node script/generateIcons.cjs",
+    "prepublish": "yarn build",
+    "test": "jest",
+    "build": "yarn generate:icons && rm -rf dist && rollup -c"
+  },
+  "devDependencies": {
+    "@svgr/babel-plugin-remove-jsx-attribute": "^8.0.0",
+    "@svgr/core": "5.5.0",
+    "@svgr/plugin-jsx": "^5.5.0",
+    "@svgr/plugin-prettier": "5.5.0",
+    "@svgr/plugin-svgo": "5.5.0",
+    "change-case": "^4.1.2",
+    "fs-extra": "^11.2.0",
+    "svgo": "^3.1.0"
+  }
+}
