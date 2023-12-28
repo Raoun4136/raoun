@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.19](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.18...@raoun/vanilla-extract@0.0.19) (2023-12-28)
+
+
+### 🐛 Bug Fixes
+
+* **vanilla-extract:** css.ts에서 함수 내보내기 util로 변경 ([3825da1](https://github.com/Raoun4136/raoun/commit/3825da100a1f4d75dd49f1a5822456b134c272b8))
+
+
+
 ## [0.0.18](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.17...@raoun/vanilla-extract@0.0.18) (2023-12-28)
 
 
