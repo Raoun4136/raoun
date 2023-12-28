@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.2...@raoun/vanilla-extract@0.0.3) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** color object export test ([e761bcb](https://github.com/Raoun4136/raoun/commit/e761bcb9a014a76248a8dfda4155a1a96cb5e067))
+
+
+
 ## [0.0.2](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.1...@raoun/vanilla-extract@0.0.2) (2023-12-28)
 
 
