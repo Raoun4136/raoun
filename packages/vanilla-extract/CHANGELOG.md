@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.17](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.16...@raoun/vanilla-extract@0.0.17) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** global & semantic type 추출 ([ffb188e](https://github.com/Raoun4136/raoun/commit/ffb188ec320447b6e22e2ed9e08c62d0cefb4487))
+
+
+
 ## [0.0.16](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.15...@raoun/vanilla-extract@0.0.16) (2023-12-28)
 
 
