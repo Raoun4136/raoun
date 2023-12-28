@@ -1,0 +1,35 @@
+{
+  "name": "@raoun/vanila-extract-style",
+  "version": "0.0.0",
+  "description": "design-token for raoun",
+  "keywords": [
+    "style",
+    "design-token"
+  ],
+  "author": "SeongOh Park <qkrtjddh1212@naver.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/style.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-raoun4136:Raoun4136/raoun.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/style.test.js"
+  },
+  "devDependencies": {
+    "@vanilla-extract/rollup-plugin": "^1.3.0"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.14.0",
+    "@vanilla-extract/recipes": "^0.5.1",
+    "@vanilla-extract/sprinkles": "^1.6.1"
+  }
+}
