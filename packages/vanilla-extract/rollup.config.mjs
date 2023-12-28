@@ -15,7 +15,7 @@ export default [
     // js 번들링
     input: 'src/index.ts',
     output: [
-      { file: 'dist/index.js', format: 'cjs' },
+      { file: 'dist/index.js', format: 'cjs', sourcemap: true },
       {
         file: 'dist/index.esm.js',
         format: 'esm',
