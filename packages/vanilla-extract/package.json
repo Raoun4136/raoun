@@ -11,6 +11,7 @@
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
   "main": "dist/index.js",
+  "module" : "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "directories": {
     "dist": "dist",
@@ -38,5 +39,6 @@
     "@vanilla-extract/css": "^1.14.0",
     "@vanilla-extract/recipes": "^0.5.1",
     "@vanilla-extract/sprinkles": "^1.6.1"
-  }
+  },
+  "gitHead": "ca5be8bf3a16c89b11313c0f81054dd502236a46"
 }
