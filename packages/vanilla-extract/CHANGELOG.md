@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.20](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.19...@raoun/vanilla-extract@0.0.20) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** const -> var로 함수 변경 ([47f1e8e](https://github.com/Raoun4136/raoun/commit/47f1e8e9ce8835cf158a9670264f540141b4c58d))
+
+
+
 ## [0.0.19](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.18...@raoun/vanilla-extract@0.0.19) (2023-12-28)
 
 
