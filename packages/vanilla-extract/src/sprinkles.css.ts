@@ -3,7 +3,7 @@ import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles';
 import { vars } from './theme.css';
 import { SemanticColor } from './tokens/semantic/colors';
 import { Space } from './tokens/global/spacing';
-import { Colors } from './tokens/global/colors';
+import { Colors, type Color } from './tokens/global/colors';
 
 export const colors = {
   ...transformObject<SemanticColor>(vars.semantic.color),
@@ -18,6 +18,22 @@ export const baseColorProperties = defineProperties({
     borderColor: colors,
   },
 });
+
+export const definePrimaryProperty = ({ object }: { object: Color }) => {
+  // object 받은 후에 primary를 바꿔줘야함
+  // readonly type이라 고민중
+  const colors = {
+    ...transformObject<SemanticColor>(vars.semantic.color),
+    ...transformObject<Colors>(vars.global.colors),
+  };
+  return defineProperties({
+    properties: {
+      color: colors,
+      backgroundColor: colors,
+      borderColor: colors,
+    },
+  });
+};
 
 export const baseBorderProperties = defineProperties({
   properties: {
@@ -62,7 +78,7 @@ export const baseLayoutShorthands = {
   marginY: ['marginTop', 'marginBottom'],
 } as const;
 
-export const colorProperties = defineProperties({
+export const baseProperties = defineProperties({
   properties: {
     color: colors,
     backgroundColor: colors,
@@ -99,6 +115,6 @@ export const colorProperties = defineProperties({
   },
 });
 
-export const sprinkles = createSprinkles(colorProperties);
+export const sprinkles = createSprinkles(baseProperties);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];
