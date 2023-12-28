@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.6...@raoun/vanilla-extract@0.0.7) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** type:module 삭제 ([5baaeba](https://github.com/Raoun4136/raoun/commit/5baaebaf1df45c91358e8c062bac1f95a55979a2))
+
+
+
 ## [0.0.6](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.5...@raoun/vanilla-extract@0.0.6) (2023-12-28)
 
 
