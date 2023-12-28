@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/Raoun4136/raoun/compare/@raoun/icons@0.0.4...@raoun/icons@0.0.5) (2023-12-28)
+
+
+### 👷 Build & Config & Setting
+
+* **icons:** rollup에 svgr 추가 ([7fcd7dc](https://github.com/Raoun4136/raoun/commit/7fcd7dcc36a6aab023095f7146d8801805da712e))
+
+
+
 ## [0.0.4](https://github.com/Raoun4136/raoun/compare/@raoun/icons@0.0.3...@raoun/icons@0.0.4) (2023-12-28)
 
 
