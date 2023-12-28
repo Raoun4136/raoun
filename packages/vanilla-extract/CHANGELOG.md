@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.15](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.14...@raoun/vanilla-extract@0.0.15) (2023-12-28)
+
+
+### 🐛 Bug Fixes
+
+* **vanilla-extract:** as const 삭제 ([ef6bccb](https://github.com/Raoun4136/raoun/commit/ef6bccb8b16ad1409af0c3a45e749526895eebd8))
+
+
+
 ## [0.0.14](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.13...@raoun/vanilla-extract@0.0.14) (2023-12-28)
 
 
