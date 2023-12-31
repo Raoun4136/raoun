@@ -11,57 +11,6 @@ export const colors = {
 };
 export const space = transformObject<Space>({ spacing: vars.global.spacing });
 
-export const baseColorProperties = defineProperties({
-  properties: {
-    color: colors,
-    backgroundColor: colors,
-    borderColor: colors,
-  },
-});
-
-export const baseBorderProperties = defineProperties({
-  properties: {
-    borderRadius: {
-      none: '0px',
-      medium: '6px',
-      large: '8px',
-      extraLarge: '12px',
-      '2xLarge': '16px',
-      '3xLarge': '24px',
-      '4xLarge': '40px',
-      full: '9999px',
-    },
-  },
-});
-
-export const baseBorderShorthands = {
-  rounded: ['borderRadius'],
-} as const;
-
-export const baseLayoutProperties = defineProperties({
-  properties: {
-    paddingTop: space,
-    paddingBottom: space,
-    paddingLeft: space,
-    paddingRight: space,
-    marginTop: space,
-    marginBottom: space,
-    marginLeft: { ...space, auto: 'auto' },
-    marginRight: { ...space, auto: 'auto' },
-    gap: { ...space, none: 'none' },
-    margin: space,
-  },
-});
-
-export const baseLayoutShorthands = {
-  padding: ['paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'],
-  paddingX: ['paddingLeft', 'paddingRight'],
-  paddingY: ['paddingTop', 'paddingBottom'],
-  margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
-  marginX: ['marginLeft', 'marginRight'],
-  marginY: ['marginTop', 'marginBottom'],
-} as const;
-
 export const baseProperties = defineProperties({
   properties: {
     color: colors,

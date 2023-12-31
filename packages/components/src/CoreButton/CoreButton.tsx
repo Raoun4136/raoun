@@ -1,48 +1,32 @@
 import React from 'react';
-import './CoreButton.css';
+import { button } from './style.css';
+import clsx from 'clsx';
 
 export interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * color primary | gray
    */
-  primary?: boolean;
+  variant?: 'primary' | 'gray';
   /**
-   * What background color to use
+   * Text to display
    */
-  backgroundColor?: string;
+  text?: string;
   /**
-   * How large should the button be?
+   * Other classes to add
    */
-  size?: 'small' | 'medium' | 'large';
+  className?: string;
   /**
-   * Button contents
+   * text color
    */
-  label: string;
+  color?: string;
   /**
    * Optional click handler
    */
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const CoreButton = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const CoreButton = ({ variant, text, className = '', color }: ButtonProps) => {
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <button className={clsx([button({ variant: variant }), className])}>{text}</button>
   );
 };

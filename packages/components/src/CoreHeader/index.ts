@@ -1,1 +1,0 @@
-export { CoreHeader } from './CoreHeader';

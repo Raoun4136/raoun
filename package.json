@@ -25,6 +25,7 @@
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.4",
     "@vanilla-extract/jest-transform": "^1.1.1",
+    "@vanilla-extract/vite-plugin": "^3.9.3",
     "babel-jest": "^29.7.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "husky": "^8.0.3",

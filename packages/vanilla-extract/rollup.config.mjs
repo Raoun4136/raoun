@@ -8,7 +8,6 @@ import image from '@rollup/plugin-image';
 import dts from 'rollup-plugin-dts';
 import cssimport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
-// import { vanillaExtractPlugin } from '@vanilla-extract/rollup-plugin';
 
 export default [
   {
@@ -35,7 +34,6 @@ export default [
       },
     },
     plugins: [
-      // vanillaExtractPlugin(),
       peerDepsExternal(),
       image(),
       resolve(),
