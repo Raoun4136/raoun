@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.5...@raoun/components@0.1.6) (2023-12-31)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** vanilla-extract 도입 ([47923a3](https://github.com/Raoun4136/raoun/commit/47923a3d68fa5262c76ca1a55a67d85e2ceef0a7))
+
+
+
 ## [0.1.5](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.4...@raoun/components@0.1.5) (2023-12-28)
 
 
