@@ -14,5 +14,5 @@ lerna-debug.log
 npm-debug.log
 .idea
 
-# Ignore Panda css output files
-styled-system
+# Ignore Storybook build output
+storybook-static

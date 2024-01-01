@@ -24,6 +24,7 @@
     "@svgr/rollup": "^8.1.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.4",
+    "@vanilla-extract/babel-plugin": "^1.2.0",
     "@vanilla-extract/jest-transform": "^1.1.1",
     "@vanilla-extract/vite-plugin": "^3.9.3",
     "babel-jest": "^29.7.0",
