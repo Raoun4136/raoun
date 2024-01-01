@@ -1,0 +1,66 @@
+name: Pull-Request
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v1
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run build
+        run: npx lerna run build
+
+      - name: if fail
+        uses: actions/github-script@v5.0.0
+        with:
+          # 원하는 script 선언
+          script: |
+            const ref = "${{github.ref}}"
+            const pull_number = Number(ref.split("/")[2])
+            await github.rest.pulls.createReview({
+              ...context.repo,
+              pull_number,
+              body:"빌드에서 에러가 났습니다.😢 ",
+              event: "REQUEST_CHANGES"
+            })
+            await github.rest.pulls.update({
+              ...context.repo,
+              pull_number,
+              state: "closed"
+            })
+        if: failure()
+
+      - name: Run test
+        run: npx lerna run test
+
+      - name: if fail
+        uses: actions/github-script@v5.0.0
+        with:
+          # 원하는 script 선언
+          script: |
+            const ref = "${{github.ref}}"
+            const pull_number = Number(ref.split("/")[2])
+            await github.rest.pulls.createReview({
+              ...context.repo,
+              pull_number,
+              body:"테스트를 통과하지 못했습니다.😢 ",
+              event: "REQUEST_CHANGES"
+            })
+            await github.rest.pulls.update({
+              ...context.repo,
+              pull_number,
+              state: "closed"
+            })
+        if: failure()
