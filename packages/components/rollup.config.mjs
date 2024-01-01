@@ -39,13 +39,13 @@ export default [
         presets: ['@babel/preset-env', '@babel/preset-typescript'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
-      // postcss(
-      //   // css 번들링
-      //   {
-      //     plugins: [cssimport(), autoprefixer()],
-      //     extract: true,
-      //   }
-      // ),
+      postcss(
+        // css 번들링
+        {
+          plugins: [cssimport(), autoprefixer()],
+          extract: true,
+        }
+      ),
     ],
   }, // 타입 정의 파일 번들링
   {
