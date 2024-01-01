@@ -15,12 +15,6 @@ export default [
     output: [
       {
         dir: 'dist',
-        format: 'cjs',
-        sourcemap: true,
-        preserveModules: true,
-      },
-      {
-        dir: 'dist',
         format: 'esm',
         sourcemap: true,
         preserveModules: true,
@@ -37,7 +31,8 @@ export default [
       // uglify(), // js 압축
       babel({
         babelHelpers: 'bundled',
-        presets: ['@babel/preset-env', '@babel/preset-react'],
+        presets: ['@babel/preset-env', '@babel/preset-typescript'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
       svgr(),
     ],
@@ -45,7 +40,6 @@ export default [
   {
     input: 'lib/index.ts',
     output: [
-      { dir: 'dist', format: 'cjs', sourceMap: true, preserveModules: true },
       {
         dir: 'dist',
         format: 'esm',
