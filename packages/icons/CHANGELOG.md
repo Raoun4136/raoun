@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/Raoun4136/raoun/compare/@raoun/icons@0.0.5...@raoun/icons@0.0.6) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **icons:** rollup cjs 삭제 ([166695f](https://github.com/Raoun4136/raoun/commit/166695f19e4fcd5b5f403a7635edaa61236ed058))
+
+
+
 ## [0.0.5](https://github.com/Raoun4136/raoun/compare/@raoun/icons@0.0.4...@raoun/icons@0.0.5) (2023-12-28)
 
 
