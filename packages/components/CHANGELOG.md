@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.10...@raoun/components@0.1.11) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** plugin 추가 ([91b9001](https://github.com/Raoun4136/raoun/commit/91b9001325b19ca7a9a9d55a0525fcb0f63786e9))
+
+
+
 ## [0.1.10](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.9...@raoun/components@0.1.10) (2024-01-01)
 
 
