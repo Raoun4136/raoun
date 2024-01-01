@@ -16,24 +16,28 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        dir: 'dist',
-        format: 'cjs',
-        preserveModules: true,
-        sourcemap: true,
-      },
-      {
-        dir: 'dist',
+        dir: 'esm',
         format: 'esm',
         sourcemap: true,
         preserveModules: true,
+        preserveModulesRoot: 'src',
+
+        assetFileNames({ name }) {
+          return name?.replace(/^src\//, '') ?? '';
+        },
+      },
+      {
+        dir: 'cjs',
+        format: 'cjs',
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+        sourcemap: true,
+
+        assetFileNames({ name }) {
+          return name?.replace(/^src\//, '') ?? '';
+        },
       },
     ],
-    exports: {
-      '.': {
-        import: './dist/index.esm.js',
-        require: './dist/index.js',
-      },
-    },
     plugins: [
       vanillaExtractPlugin(),
       peerDepsExternal(),
@@ -49,26 +53,6 @@ export default [
           extract: true,
         }
       ),
-    ],
-  }, // 타입 정의 파일 번들링
-  {
-    input: 'src/index.ts',
-    output: [
-      { file: 'dist/index.d.ts', format: 'cjs' },
-      { file: 'dist/index.esm.d.ts', format: 'esm' },
-    ],
-    exports: {
-      '.': {
-        import: './dist/index.d.ts',
-        require: './dist/index.esm.d.ts',
-      },
-    },
-    plugins: [
-      dts(),
-      postcss({
-        plugins: [cssimport(), autoprefixer()],
-        extract: true,
-      }),
     ],
   },
 ];

@@ -18,8 +18,19 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        dir: 'dist',
+        dir: 'esm',
         format: 'esm',
+        sourcemap: true,
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+
+        assetFileNames({ name }) {
+          return name?.replace(/^src\//, '') ?? '';
+        },
+      },
+      {
+        dir: 'cjs',
+        format: 'cjs',
         sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: 'src',
@@ -38,7 +49,7 @@ export default [
       commonjs({
         include: /node_modules/,
       }),
-      typescript({ clean: true, sourceMap: true }),
+      typescript({ clean: false, sourceMap: true }),
       // uglify(), // js 압축
       babel({
         babelHelpers: 'bundled',
@@ -49,21 +60,9 @@ export default [
         // css 번들링
         {
           plugins: [autoprefixer()],
-          extract: false,
+          extract: true,
         }
       ),
     ],
-  }, // 타입 정의 파일 번들링
-  {
-    input: 'src/index.ts',
-    output: [
-      {
-        dir: 'dist',
-        format: 'esm',
-        preserveModules: true,
-        preserveModulesRoot: 'src',
-      },
-    ],
-    plugins: [dts()],
   },
 ];
