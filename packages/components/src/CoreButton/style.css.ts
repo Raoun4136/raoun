@@ -22,9 +22,9 @@ const base = style([
 const variant = {
   primary: style([
     sprinkles({
-      backgroundColor: 'primary-10',
-      paddingX: 'spacing-2000',
+      paddingX: 'spacing-100',
       paddingY: 'spacing-500',
+      backgroundColor: 'primary-10',
     }),
     typoVariant.body[1],
     {
