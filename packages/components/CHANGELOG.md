@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.12](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.11...@raoun/components@0.1.12) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** plugin css파일 empty로 변경 ([1d1bdce](https://github.com/Raoun4136/raoun/commit/1d1bdce270c50c5c4320185accc6254c499377ab))
+
+
+
 ## [0.1.11](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.10...@raoun/components@0.1.11) (2024-01-01)
 
 
