@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.25](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.24...@raoun/vanilla-extract@0.0.25) (2024-01-01)
+
+
+### 🐛 Bug Fixes
+
+* **vanilla-extract:** 오타 수정 fontWeight ([70009a3](https://github.com/Raoun4136/raoun/commit/70009a398693a844bbe79daf9df750309aa9da47))
+
+
+
 ## [0.0.24](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.23...@raoun/vanilla-extract@0.0.24) (2024-01-01)
 
 
