@@ -9,8 +9,8 @@
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "dist/packages/components/src/index.js",
-  "module": "dist/packages/components/src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
     "dist": "dist",

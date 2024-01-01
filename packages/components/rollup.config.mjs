@@ -21,9 +21,11 @@ export default [
         format: 'esm',
         sourcemap: true,
         preserveModules: true,
+        preserveModulesRoot: 'src',
       },
     ],
     plugins: [
+      // vanillaExtractPlugin(),
       peerDepsExternal(),
       image(),
       resolve(),
