@@ -11,7 +11,7 @@
   "license": "MIT",
   "main": "cjs/index.js",
   "module": "esm/index.js",
-  "types": "cjs/index.d.ts",
+  "types": "esm/index.d.ts",
   "directories": {
     "cjs": "cjs",
     "esm": "esm",
