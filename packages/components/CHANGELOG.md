@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.7...@raoun/components@0.1.8) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** package 경로 변경 ([dc7d847](https://github.com/Raoun4136/raoun/commit/dc7d847deb929f0ff13ae02cef1491e822fe3551))
+
+
+
 ## [0.1.7](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.6...@raoun/components@0.1.7) (2024-01-01)
 
 

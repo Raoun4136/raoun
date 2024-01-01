@@ -1,6 +1,6 @@
 {
   "name": "@raoun/components",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "components",
   "keywords": [
     "react",
@@ -32,9 +32,9 @@
     "build": "rm -rf dist && rollup -c"
   },
   "devDependencies": {
+    "@raoun/vanilla-extract": "^0.0.22",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
-    "@raoun/vanilla-extract": "^0.0.22",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
     "postcss-import": "^15.1.0"
