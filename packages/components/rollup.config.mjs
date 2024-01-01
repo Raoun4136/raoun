@@ -19,8 +19,8 @@ export default [
       {
         dir: 'dist',
         format: 'esm',
-        preserveModules: true,
         sourcemap: true,
+        preserveModules: true,
       },
     ],
     plugins: [
@@ -30,31 +30,25 @@ export default [
       commonjs({
         include: /node_modules/,
       }),
-      typescript({ clean: true, sourceMap: false }),
-      uglify(), // js 압축
+      typescript({ clean: true, sourceMap: true }),
+      // uglify(), // js 압축
       babel({
         babelHelpers: 'bundled',
         presets: ['@babel/preset-env', '@babel/preset-typescript'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
-      postcss(
-        // css 번들링
-        {
-          plugins: [cssimport(), autoprefixer()],
-          extract: true,
-        }
-      ),
+      // postcss(
+      //   // css 번들링
+      //   {
+      //     plugins: [cssimport(), autoprefixer()],
+      //     extract: true,
+      //   }
+      // ),
     ],
   }, // 타입 정의 파일 번들링
   {
     input: 'src/index.ts',
-    output: [{ dir: 'dist', format: 'esm', sourceMap: true, preserveModules: true }],
-    plugins: [
-      dts(),
-      postcss({
-        plugins: [cssimport(), autoprefixer()],
-        extract: true,
-      }),
-    ],
+    output: [{ dir: 'dist', format: 'esm' }],
+    plugins: [dts()],
   },
 ];

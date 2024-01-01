@@ -9,9 +9,9 @@
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/packages/components/src/index.js",
+  "module": "dist/packages/components/src/index.js",
+  "types": "dist/packages/components/src/index.d.ts",
   "directories": {
     "dist": "dist",
     "test": "__tests__"
@@ -32,16 +32,16 @@
     "build": "rm -rf dist && rollup -c"
   },
   "devDependencies": {
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
     "@raoun/vanilla-extract": "^0.0.22",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
     "postcss-import": "^15.1.0"
   },
   "peerDependencies": {
-    "@types/react": "^18.2.42",
-    "@types/react-dom": "^18.2.17",
     "clsx": "^2.x",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.x",
+    "react-dom": "^18.x"
   }
 }
