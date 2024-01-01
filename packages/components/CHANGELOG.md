@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.14](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.13...@raoun/components@0.1.14) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** global css생성 삭제 ([bf80dcd](https://github.com/Raoun4136/raoun/commit/bf80dcd784beff782ef55bd8562de0a265ec743b))
+
+
+
 ## [0.1.13](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.12...@raoun/components@0.1.13) (2024-01-01)
 
 
