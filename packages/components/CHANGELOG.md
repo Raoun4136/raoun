@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.15](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.14...@raoun/components@0.1.15) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** vars import 위치 변경 ([142361e](https://github.com/Raoun4136/raoun/commit/142361e2273835d0344cac5c6e57106505105528))
+
+
+
 ## [0.1.14](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.13...@raoun/components@0.1.14) (2024-01-01)
 
 
