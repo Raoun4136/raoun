@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.16](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.15...@raoun/components@0.1.16) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** type esm으로 변경 ([54ceff3](https://github.com/Raoun4136/raoun/commit/54ceff3400a907361d0aa1b3a6023eb6cd3878c0))
+
+
+
 ## [0.1.15](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.14...@raoun/components@0.1.15) (2024-01-01)
 
 
