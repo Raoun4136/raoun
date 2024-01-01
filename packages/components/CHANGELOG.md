@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.6...@raoun/components@0.1.7) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** rollup cjs 삭제 & babel 설정 ([d20d1ba](https://github.com/Raoun4136/raoun/commit/d20d1bafa66e32afe691e36c07588585689976ef))
+
+
+
 ## [0.1.6](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.5...@raoun/components@0.1.6) (2023-12-31)
 
 
