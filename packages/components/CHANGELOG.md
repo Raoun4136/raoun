@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.9...@raoun/components@0.1.10) (2024-01-01)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** preserveModuleRoot 변경 ([9df811d](https://github.com/Raoun4136/raoun/commit/9df811d46a6a7828979e711eb124ec360c698775))
+
+
+
 ## [0.1.9](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.8...@raoun/components@0.1.9) (2024-01-01)
 
 
