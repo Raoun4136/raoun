@@ -2,6 +2,7 @@ import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
 import { uglify } from 'rollup-plugin-uglify';
 import commonjs from '@rollup/plugin-commonjs';
+import depsExternal from 'rollup-plugin-node-externals';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import image from '@rollup/plugin-image';
@@ -22,10 +23,15 @@ export default [
         sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: 'src',
+
+        assetFileNames({ name }) {
+          return name?.replace(/^src\//, '') ?? '';
+        },
       },
     ],
     plugins: [
-      // vanillaExtractPlugin(),
+      vanillaExtractPlugin({ esbuildOptions: { loader: { '.css': 'empty' } } }),
+      depsExternal(),
       peerDepsExternal(),
       image(),
       resolve(),
@@ -42,15 +48,22 @@ export default [
       postcss(
         // css 번들링
         {
-          plugins: [cssimport(), autoprefixer()],
-          extract: true,
+          plugins: [autoprefixer()],
+          extract: false,
         }
       ),
     ],
   }, // 타입 정의 파일 번들링
   {
     input: 'src/index.ts',
-    output: [{ dir: 'dist', format: 'esm' }],
+    output: [
+      {
+        dir: 'dist',
+        format: 'esm',
+        preserveModules: true,
+        preserveModulesRoot: 'src',
+      },
+    ],
     plugins: [dts()],
   },
 ];
