@@ -1,8 +1,8 @@
 import { createVar, style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
-import { vars } from '../styles/theme.css';
 import { sprinkles } from '../styles/sprinkles.css';
 import { typoVariant } from '@raoun/vanilla-extract';
+import { vars } from '../styles/theme.css';
 
 export const color = createVar();
 
