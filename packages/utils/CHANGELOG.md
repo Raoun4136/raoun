@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.3...@raoun/utils@0.1.4) (2024-01-02)
+
+
+### 👷 Build & Config & Setting
+
+* **utils:** export ([0b0f1f2](https://github.com/Raoun4136/raoun/commit/0b0f1f27a808684a4967f47232c5b8c1209f443d))
+
+
+
 ## [0.1.3](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.2...@raoun/utils@0.1.3) (2024-01-02)
 
 
