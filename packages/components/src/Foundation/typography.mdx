@@ -1,0 +1,91 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Foundation/Typography" />
+
+export const typography = {
+  type: {
+    primary:
+      '"Pretendard", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    regular: '400',
+    medium: '500',
+    semibold: '600',
+  },
+  size: {
+    'heading-01': 12,
+    'heading-02': 14,
+    'heading-03': 16,
+    'heading-04': 20,
+    'heading-05': 24,
+    'heading-06': 32,
+    'heading-07': 40,
+    'body-01': 12,
+    'body-02': 14,
+    'caption-01': 11,
+    'caption-02': 12,
+  },
+};
+
+export const SampleText_en = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+export const SampleText_ko = '다람쥐 헌 쳇바퀴에 타고파 ';
+
+# Typography
+
+## Heading
+
+**Font:** Pretendard
+
+**Weights:** 400(Regular), 500(Medium), 600(SemiBold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size['heading-01']),
+    Number(typography.size['heading-02']),
+    Number(typography.size['heading-03']),
+    Number(typography.size['heading-04']),
+    Number(typography.size['heading-05']),
+    Number(typography.size['heading-06']),
+    Number(typography.size['heading-07']),
+  ]}
+  fontWeight={[
+    typography.weight.medium,
+    typography.weight.medium,
+    typography.weight.semibold,
+    typography.weight.semibold,
+    typography.weight.semibold,
+    typography.weight.semibold,
+    typography.weight.semibold,
+  ]}
+  sampleText={[SampleText_ko, SampleText_en]}
+  fontFamily={typography.type.primary}
+/>
+
+## Body
+
+**Font:** Pretendard
+
+**Weights:** 400(Regular)
+
+<Typeset
+  fontSizes={[Number(typography.size['body-01']), Number(typography.size['body-02'])]}
+  fontWeight={typography.weight.regular}
+  sampleText={[SampleText_ko, SampleText_en]}
+  fontFamily={typography.type.primary}
+/>
+
+## Caption
+
+**Font:** Pretendard
+
+**Weights:** 400(Regular)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size['caption-01']),
+    Number(typography.size['caption-02']),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={[SampleText_ko, SampleText_en]}
+  fontFamily={typography.type.primary}
+/>

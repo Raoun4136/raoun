@@ -1,4 +1,5 @@
 {
+  "name": "design-system",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -50,7 +51,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "npx lerna run build && storybook dev -p 6006",
     "build-storybook": "npx lerna run build && storybook build"
   }
 }

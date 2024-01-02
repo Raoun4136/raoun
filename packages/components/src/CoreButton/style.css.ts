@@ -22,7 +22,7 @@ const base = style([
 const variant = {
   primary: style([
     sprinkles({
-      paddingX: 'spacing-100',
+      paddingX: 'spacing-300',
       paddingY: 'spacing-500',
       backgroundColor: 'primary-10',
     }),
@@ -33,18 +33,30 @@ const variant = {
       },
 
       ':hover': {
-        // backgroundColor: vars.global.colors["primary-10"],
+        backgroundColor: vars.global.colors.primary[20],
         vars: {
-          // [color]: vars.global.colors["primary-90"],
+          [color]: vars.global.colors.primary[90],
         },
       },
     },
   ]),
   gray: style([
-    sprinkles({ backgroundColor: 'primary-100' }),
+    sprinkles({
+      paddingX: 'spacing-300',
+      paddingY: 'spacing-500',
+      backgroundColor: 'gray-10',
+    }),
+    typoVariant.body[1],
     {
       vars: {
-        // [color]: vars.global.colors["primary-80"],
+        [color]: vars.global.colors.gray[80],
+      },
+
+      ':hover': {
+        backgroundColor: vars.global.colors.gray[30],
+        vars: {
+          [color]: vars.global.colors.gray[90],
+        },
       },
     },
   ]),

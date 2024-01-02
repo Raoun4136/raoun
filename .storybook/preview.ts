@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react';
+import '@raoun/components/esm/styles/theme.css.ts.vanilla.css';
 
 const preview: Preview = {
   parameters: {
