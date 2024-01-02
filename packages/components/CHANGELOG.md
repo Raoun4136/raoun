@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.22](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.21...@raoun/components@0.1.22) (2024-01-02)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** design-token으로 구성 ([8d6ce78](https://github.com/Raoun4136/raoun/commit/8d6ce78e44517109221ec8966e549f8b81910c36))
+
+
+
 ## [0.1.21](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.20...@raoun/components@0.1.21) (2024-01-02)
 
 **Note:** Version bump only for package @raoun/components
