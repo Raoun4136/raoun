@@ -1,0 +1,36 @@
+{
+  "name": "@raoun/design-token",
+  "version": "0.0.0",
+  "description": "design token for raoun",
+  "keywords": [
+    "style",
+    "design-token"
+  ],
+  "author": "SeongOh Park <qkrtjddh1212@naver.com>",
+  "homepage": "https://github.com/Raoun4136/raoun",
+  "license": "MIT",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "cjs/index.d.ts",
+  "directories": {
+    "cjs": "cjs",
+    "esm": "esm",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Raoun4136/raoun.git"
+  },
+  "scripts": {
+    "prepublish": "rm -rf esm && rm -rf cjs && rollup -c",
+    "test": "jest",
+    "build": "rm -rf esm && rm -rf cjs && rollup -c"
+  }
+}
