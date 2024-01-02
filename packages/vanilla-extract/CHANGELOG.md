@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.26](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.25...@raoun/vanilla-extract@0.0.26) (2024-01-02)
+
+
+### 👷 Build & Config & Setting
+
+* **vanilla-extract:** rollup entry file 설정 ([a44a9cc](https://github.com/Raoun4136/raoun/commit/a44a9cc8fdf872f84c78706d499440c842ae5701))
+
+
+
 ## [0.0.25](https://github.com/Raoun4136/raoun/compare/@raoun/vanilla-extract@0.0.24...@raoun/vanilla-extract@0.0.25) (2024-01-01)
 
 
