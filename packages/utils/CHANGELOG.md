@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.2...@raoun/utils@0.1.3) (2024-01-02)
+
+
+### 👷 Build & Config & Setting
+
+* **utils:** token utils 추가 ([31c5925](https://github.com/Raoun4136/raoun/commit/31c592515d8fc013b2cadb064a7372f7b7c93e07))
+
+
+
 ## [0.1.2](https://github.com/Raoun4136/raoun/compare/@raoun/utils@0.1.1...@raoun/utils@0.1.2) (2023-12-21)
 
 
