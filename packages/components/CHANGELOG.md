@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.23](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.22...@raoun/components@0.1.23) (2024-01-02)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** docs 생성 ([8f507d7](https://github.com/Raoun4136/raoun/commit/8f507d79ddcd9c2f06a8dc053bf58b7e23d9b264))
+
+
+
 ## [0.1.22](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.21...@raoun/components@0.1.22) (2024-01-02)
 
 
