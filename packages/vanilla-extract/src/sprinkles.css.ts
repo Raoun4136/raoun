@@ -38,13 +38,13 @@ export const baseProperties = defineProperties({
     margin: space,
   },
   shorthands: {
-    rounded: ['borderRadius'],
-    padding: ['paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'],
-    paddingX: ['paddingLeft', 'paddingRight'],
-    paddingY: ['paddingTop', 'paddingBottom'],
-    margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
-    marginX: ['marginLeft', 'marginRight'],
-    marginY: ['marginTop', 'marginBottom'],
+    rounded: ['borderRadius'] as const,
+    padding: ['paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight'] as const,
+    paddingX: ['paddingLeft', 'paddingRight'] as const,
+    paddingY: ['paddingTop', 'paddingBottom'] as const,
+    margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'] as const,
+    marginX: ['marginLeft', 'marginRight'] as const,
+    marginY: ['marginTop', 'marginBottom'] as const,
   },
 });
 
