@@ -21,7 +21,10 @@ export default [
         sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: 'src',
-
+        // Change .css.js files to something else so that they don't get re-processed by consumer's setup
+        entryFileNames({ name }) {
+          return `${name.replace(/\.css$/, '.css.vanilla')}.js`;
+        },
         assetFileNames({ name }) {
           return name?.replace(/^src\//, '') ?? '';
         },
@@ -32,7 +35,10 @@ export default [
         preserveModules: true,
         preserveModulesRoot: 'src',
         sourcemap: true,
-
+        // Change .css.js files to something else so that they don't get re-processed by consumer's setup
+        entryFileNames({ name }) {
+          return `${name.replace(/\.css$/, '.css.vanilla')}.js`;
+        },
         assetFileNames({ name }) {
           return name?.replace(/^src\//, '') ?? '';
         },
