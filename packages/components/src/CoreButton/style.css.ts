@@ -23,7 +23,7 @@ const variant = {
   primary: style([
     sprinkles({
       paddingX: 'spacing-300',
-      paddingY: 'spacing-500',
+      paddingY: 'spacing-400',
       backgroundColor: 'primary-10',
     }),
     typoVariant.body[1],
