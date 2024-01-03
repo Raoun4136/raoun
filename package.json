@@ -53,12 +53,12 @@
     "prepare": "husky install",
     "storybook": "npx lerna run build && storybook dev -p 6006",
     "build-storybook": "npx lerna run build && storybook build",
-    "versionup": "lerna version",
-    "ci:versionup:patch": "lerna version patch --no-push --no-git-tag-version --yes && npm run commit-version",
-    "ci:versionup:minor": "lerna version minor --no-push --no-git-tag-version --yes && npm run commit-version",
-    "ci:versionup:major": "lerna version major --no-push --no-git-tag-version --yes && npm run commit-version",
+    "versionup": "npx lerna version",
+    "ci:versionup:patch": "npx lerna version patch --no-push --no-git-tag-version --yes && yarn run commit-version",
+    "ci:versionup:minor": "npx lerna version minor --no-push --no-git-tag-version --yes && yarn run commit-version",
+    "ci:versionup:major": "lnpx erna version major --no-push --no-git-tag-version --yes && yarn run commit-version",
     "commit-version": "git add . && git commit -m \"chore(release): v$(node -p 'require(\"./lerna.json\").version')\"",
-    "release": "lerna publish from-package",
-    "ci:release": "lerna publish from-package --yes"
+    "release": "npx lerna publish from-package",
+    "ci:release": "npx lerna publish from-package --yes"
   }
 }
