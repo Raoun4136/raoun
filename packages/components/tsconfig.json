@@ -2,7 +2,12 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"]
+    }
   },
   "include": ["./src"],
   "exclude": ["node_modules", "dist"]
