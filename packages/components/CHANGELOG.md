@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.24](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.23...@raoun/components@0.1.24) (2024-01-16)
+
+
+### 👷 Build & Config & Setting
+
+* **components:** alias 설정 ([5924fd7](https://github.com/Raoun4136/raoun/commit/5924fd79bec76f548f7f3eca9fd5e7bf2c3747dc))
+
+
+
 ## [0.1.23](https://github.com/Raoun4136/raoun/compare/@raoun/components@0.1.22...@raoun/components@0.1.23) (2024-01-02)
 
 
