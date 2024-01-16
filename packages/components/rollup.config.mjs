@@ -55,12 +55,31 @@ export default [
       commonjs({
         include: /node_modules/,
       }),
-      typescript({ clean: false, sourceMap: true }),
+      typescript({
+        clean: false,
+        sourceMap: true,
+        exclude: [
+          // Exclude test files
+          /\.test.((js|jsx|ts|tsx))$/,
+          // Exclude story files
+          /\.stories.((js|jsx|ts|tsx|mdx))$/,
+          // Exclude playground files
+          /\Playground.tsx$/,
+        ],
+      }),
       // uglify(), // js 압축
       babel({
         babelHelpers: 'bundled',
         presets: ['@babel/preset-env', '@babel/preset-typescript'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        exclude: [
+          // Exclude test files
+          /\.test.((js|jsx|ts|tsx))$/,
+          // Exclude story files
+          /\.stories.((js|jsx|ts|tsx|mdx))$/,
+          // Exclude playground files
+          /\Playground.tsx$/,
+        ],
       }),
       postcss(
         // css 번들링

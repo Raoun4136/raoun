@@ -29,17 +29,23 @@
     "url": "git@github.com:Raoun4136/raoun.git"
   },
   "scripts": {
+    "playground": "rollup --config rollup.config.playground.mjs --watch",
     "prepublish": "rm -rf esm && rm -rf cjs && rollup -c",
     "test": "jest",
     "build": "rm -rf esm && rm -rf cjs && rollup -c"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
     "@raoun/vanilla-extract": "^0.0.27",
+    "@rollup/plugin-html": "^1.0.3",
+    "@rollup/plugin-replace": "^5.0.5",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
-    "postcss-import": "^15.1.0"
+    "postcss-import": "^15.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.1"
   },
   "peerDependencies": {
     "clsx": "^2.x",
