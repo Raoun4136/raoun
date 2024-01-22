@@ -15,8 +15,19 @@ function playgroundTemplate({ attributes, files, meta, publicPath, title }) {
   const links = (files.css || [])
     .map(({ fileName }) => `<link rel="stylesheet" href="${publicPath}${fileName}">`)
     .join('\n');
+  const pretendardBaseUrl = 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web';
+  const pretendardCSSFileList = [
+    '/static/pretendard.css',
+    '/static/pretendard-dynamic-subset.css',
+    '/variable/pretendardvariable.css',
+  ];
+  const pretendardLink = pretendardCSSFileList
+    .map((filename) => `<link rel="stylesheet" href="${pretendardBaseUrl}${filename}">`)
+    .join('\n');
 
-  return `<!doctype html><html><head><meta charset="utf-8"><title>${title}</title>${links}</head><body><div id="root"></div>${scripts}</body></html>`;
+  console.log('pretendardLink', pretendardLink);
+
+  return `<!doctype html><html><head><meta charset="utf-8"><title>${title}</title>${links}${pretendardLink}</head><body><div id="root"></div>${scripts}</body></html>`;
 }
 
 export default [

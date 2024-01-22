@@ -48,9 +48,9 @@ export default [
     ],
     plugins: [
       vanillaExtractPlugin({ esbuildOptions: { loader: { '.css': 'empty' } } }),
-      depsExternal(),
-      peerDepsExternal(),
-      image(),
+      // depsExternal(),
+      // peerDepsExternal(),
+      // image(),
       resolve(),
       commonjs({
         include: /node_modules/,
@@ -81,13 +81,13 @@ export default [
           /\Playground.tsx$/,
         ],
       }),
-      postcss(
-        // css 번들링
-        {
-          plugins: [autoprefixer()],
-          extract: true,
-        }
-      ),
+      // postcss(
+      //   // css 번들링
+      //   {
+      //     plugins: [autoprefixer()],
+      //     extract: true,
+      //   }
+      // ),
     ],
   },
 ];

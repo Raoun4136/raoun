@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.23.3",
+    "@carbon/charts-angular": "^1.8.1",
     "@raoun/vanilla-extract": "^0.0.27",
     "@rollup/plugin-html": "^1.0.3",
     "@rollup/plugin-replace": "^5.0.5",
@@ -43,6 +44,9 @@
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
+    "d3": "^7.8.5",
+    "d3-cloud": "^1.2.7",
+    "d3-sankey": "^0.12.3",
     "postcss-import": "^15.1.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.1"
@@ -51,5 +55,8 @@
     "clsx": "^2.x",
     "react": "^18.x",
     "react-dom": "^18.x"
+  },
+  "dependencies": {
+    "d3": "^7.8.5"
   }
 }
