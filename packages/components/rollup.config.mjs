@@ -23,7 +23,6 @@ export default [
         sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: 'src',
-        // Change .css.js files to something else so that they don't get re-processed by consumer's setup
         entryFileNames({ name }) {
           return `${name.replace(/\.css$/, '.css.vanilla')}.js`;
         },
@@ -37,7 +36,6 @@ export default [
         sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: 'src',
-        // Change .css.js files to something else so that they don't get re-processed by consumer's setup
         entryFileNames({ name }) {
           return `${name.replace(/\.css$/, '.css.vanilla')}.js`;
         },
@@ -49,14 +47,14 @@ export default [
     plugins: [
       vanillaExtractPlugin({ esbuildOptions: { loader: { '.css': 'empty' } } }),
       // depsExternal(),
-      // peerDepsExternal(),
+      peerDepsExternal(),
+      resolve({ dedupe: ['react', 'react-dom'] }),
       // image(),
-      resolve(),
       commonjs({
         include: /node_modules/,
       }),
       typescript({
-        clean: false,
+        clean: true,
         sourceMap: true,
         exclude: [
           // Exclude test files

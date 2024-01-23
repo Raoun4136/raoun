@@ -7,6 +7,9 @@ import livereload from 'rollup-plugin-livereload';
 import replace from '@rollup/plugin-replace';
 import html from '@rollup/plugin-html';
 import { vanillaExtractPlugin } from '@vanilla-extract/rollup-plugin';
+import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer';
+import externalGlobals from 'rollup-plugin-external-globals';
 
 function playgroundTemplate({ attributes, files, meta, publicPath, title }) {
   const scripts = (files.js || [])
@@ -25,9 +28,9 @@ function playgroundTemplate({ attributes, files, meta, publicPath, title }) {
     .map((filename) => `<link rel="stylesheet" href="${pretendardBaseUrl}${filename}">`)
     .join('\n');
 
-  console.log('pretendardLink', pretendardLink);
+  const bundleCss = `<link rel="stylesheet" href="./bundle.css" />`;
 
-  return `<!doctype html><html><head><meta charset="utf-8"><title>${title}</title>${links}${pretendardLink}</head><body><div id="root"></div>${scripts}</body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><title>${title}</title>${links}${pretendardLink}${bundleCss}</head><body><div id="root"></div>${scripts}</body></html>`;
 }
 
 export default [
@@ -44,6 +47,9 @@ export default [
       typescript(),
       resolve(),
       commonjs(),
+      // externalGlobals({
+      //   'carbon/charts': '@carbon/charts',
+      // }),
       babel({
         presets: ['@babel/preset-env', '@babel/preset-react'],
         babelHelpers: 'bundled',
@@ -65,6 +71,13 @@ export default [
         template: playgroundTemplate,
       }),
       vanillaExtractPlugin({ esbuildOptions: { loader: { '.css': 'empty' } } }),
+      postcss(
+        // css 번들링
+        {
+          plugins: [autoprefixer()],
+          extract: true,
+        }
+      ),
     ],
   },
 ];
