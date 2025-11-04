@@ -1,0 +1,33 @@
+{
+  "name": "@raoun/design-token",
+  "packageManager": "pnpm@10.13.1",
+  "version": "0.0.2",
+  "description": "design token for raoun",
+  "keywords": [
+    "style",
+    "design-token"
+  ],
+  "author": "SeongOh Park <qkrtjddh1212@naver.com>",
+  "homepage": "https://github.com/Raoun4136/raoun",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/raoun.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf dist && rollup -c"
+  }
+}
