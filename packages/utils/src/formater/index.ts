@@ -1,1 +1,0 @@
-export { phoneFormater } from './phone';

@@ -1,6 +1,0 @@
-node_modules/
-__tests__/
-.eslintrc.js
-.prettierrc
-tsconfig.json
-yarn.lock

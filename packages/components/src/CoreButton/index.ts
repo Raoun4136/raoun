@@ -1,1 +1,0 @@
-export { CoreButton } from './CoreButton';
