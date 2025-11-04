@@ -3,6 +3,27 @@ import typescript from '@rollup/plugin-typescript';
 import nodeResolve from '@rollup/plugin-node-resolve';
 // import terser from '@rollup/plugin-terser';
 import dts from 'rollup-plugin-dts';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Custom plugin to generate CSS files after build
+const generateCSSPlugin = () => {
+	return {
+		name: 'generate-css',
+		writeBundle() {
+			try {
+				const scriptPath = join(__dirname, 'scripts/generate-css.ts');
+				execSync(`npx tsx ${scriptPath}`, { stdio: 'inherit' });
+			} catch (error) {
+				console.error('Error generating CSS files:', error);
+			}
+		},
+	};
+};
 
 export default [
 	{
@@ -27,12 +48,14 @@ export default [
 			},
 		],
 		plugins: [
-			nodeResolve({}),
-			commonjs({}),
+			nodeResolve(),
+			commonjs(),
 			typescript({
 				lib: ['ESNext'],
+				exclude: ['scripts/**/*', '**/*.test.ts', '**/*.spec.ts'],
 			}),
 			// terser({}),
+			generateCSSPlugin(),
 		],
 	},
 	{

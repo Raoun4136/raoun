@@ -10,9 +10,17 @@
   "author": "SeongOh Park <qkrtjddh1212@naver.com>",
   "homepage": "https://github.com/Raoun4136/raoun",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style/*" : "./dist/style/*.css"
+  },
   "directories": {
     "test": "__tests__"
   },
@@ -29,5 +37,8 @@
   "scripts": {
     "test": "jest",
     "build": "rm -rf dist && rollup -c"
+  },
+  "devDependencies": {
+    "path": "^0.12.7"
   }
 }
