@@ -19,7 +19,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./style/*" : "./dist/style/*.css"
+    "./style/*" : "./dist/style/*.css",
+    "./utils" : "./dist/utils/index.js"
   },
   "directories": {
     "test": "__tests__"

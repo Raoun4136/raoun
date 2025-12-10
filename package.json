@@ -1,7 +1,7 @@
 {
 	"name": "raoun",
 	"private": true,
-	"packageManager": "pnpm@10.13.1",
+	"packageManager": "pnpm@10.25.0",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -10,6 +10,7 @@
 		"@rollup/plugin-node-resolve": "^16.0.3",
 		"@rollup/plugin-terser": "^0.4.4",
 		"@rollup/plugin-typescript": "^12.3.0",
+		"@storybook/react-vite": "^10.1.4",
 		"@types/node": "^24.10.0",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
